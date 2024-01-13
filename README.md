@@ -1,10 +1,14 @@
-# dsa-python
+# DSA-Python
 
 Data Structures and Algorithms in Python
+
+## Table of Contents
+
+- [Stack](./dsa/stack/)
+  - [Dynamic Array Stack](./dsa/stack/dynamic_array_stack.py)
 
 ## Test
 
 ```bash
-$ cd dsa/stack
-$ python -m unittest *_test.py -v
+$ python -m unittest ./dsa/stack/*_test.py -v
 ```
