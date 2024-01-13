@@ -6,6 +6,7 @@ Data Structures and Algorithms in Python
 
 - [Stack](./dsa/stack/)
   - [Dynamic Array Stack](./dsa/stack/dynamic_array_stack.py)
+  - [Linked List Stack](./dsa/stack/linked_list_stack.py)
 
 ## Test
 
