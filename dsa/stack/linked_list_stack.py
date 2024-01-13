@@ -5,6 +5,12 @@ class Node:
 
 
 class LinkedListStack:
+    r"""
+    A stack is a linear data structure that follows the principle of Last In,
+    First Out (LIFO), that is, the last element pushed onto the stack is removed
+    first. A stack can be implemented using a linked list.
+    """
+
     def __init__(self):
         self.head = None
 
@@ -14,7 +20,6 @@ class LinkedListStack:
         Returns the number of elements in the stack.
 
         Time Complexity: $O(n)$, where $n$ is the number of elements
-
         Space Complexity: $O(1)$
         """
         current_node = self.head
@@ -32,7 +37,6 @@ class LinkedListStack:
         Adds an element to the top of the stack.
 
         Time Complexity: $O(1)$
-
         Space Complexity: $O(1)$
         """
         new_node = Node(data)
@@ -44,7 +48,6 @@ class LinkedListStack:
         Removes and returns the element from the top of the stack.
 
         Time Complexity: $O(1)$
-
         Space Complexity: $O(1)$
         """
         if self.is_empty():
@@ -59,7 +62,6 @@ class LinkedListStack:
         Returns the element at the top of the stack without removing it.
 
         Time Complexity: $O(1)$
-
         Space Complexity: $O(1)$
         """
         if self.is_empty():

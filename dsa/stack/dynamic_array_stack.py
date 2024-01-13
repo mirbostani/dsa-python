@@ -1,6 +1,6 @@
-class DynamicArrayStack:
+class DynamicArrayStack:   
     def __init__(self):
-        self.stack = []
+        self.stack = [] # Python list (dynamic array)
 
     @property
     def size(self):

@@ -105,7 +105,7 @@ class TestFixedSizeArrayStack(unittest.TestCase):
 
         self.assertEqual(stack.size, 3)
         self.assertEqual(stack.max_size, 10)
-        
+
         self.shortDescription()
 
     def test_fixed_size_array_stack_push_and_pop(self):
