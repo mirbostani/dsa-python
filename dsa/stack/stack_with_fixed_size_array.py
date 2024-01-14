@@ -1,4 +1,4 @@
-class FixedSizeArrayStack:
+class StackWithFixedSizeArray:
     def __init__(self, max_size):
         self.max_size = max_size
         self.stack = [None] * self.max_size

@@ -1,4 +1,4 @@
-class TwoStackQueue:
+class QueueWithTwoStacks:
     r"""
     Two stacks are used to simulate a queue. Elements can be enqueued at one end
     and dequeued from the other.

@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
 
-class LinkedListStack:
+class StackWithLinkedList:
     r"""
     A stack is a linear data structure that follows the principle of Last In,
     First Out (LIFO), that is, the last element pushed onto the stack is removed

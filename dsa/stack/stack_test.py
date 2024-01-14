@@ -1,13 +1,13 @@
 import unittest
-from dsa.stack.dynamic_array_stack import DynamicArrayStack
-from dsa.stack.linked_list_stack import LinkedListStack
-from dsa.stack.fixed_size_array_stack import FixedSizeArrayStack
+from dsa.stack.stack_with_dynamic_array import StackWithDynamicArray
+from dsa.stack.stack_with_linked_list import StackWithLinkedList
+from dsa.stack.stack_with_fixed_size_array import StackWithFixedSizeArray
 
 
-class TestDynamicArrayStack(unittest.TestCase):
-    def test_dynamic_array_stack_init(self):
-        r"""Should create a dynamic array stack containing three elements."""
-        stack = DynamicArrayStack()
+class TestStackWithDynamicArray(unittest.TestCase):
+    def test_stack_with_dynamic_array_init(self):
+        r"""Should create a stack with dynamic array containing three elements."""
+        stack = StackWithDynamicArray()
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -16,9 +16,9 @@ class TestDynamicArrayStack(unittest.TestCase):
 
         self.shortDescription()
 
-    def test_dynamic_array_stack_push_and_pop(self):
+    def test_stack_with_dynamic_array_push_and_pop(self):
         r"""Should push and pop elements of a stack following LIFO principle."""
-        stack = DynamicArrayStack()
+        stack = StackWithDynamicArray()
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -36,9 +36,9 @@ class TestDynamicArrayStack(unittest.TestCase):
 
         self.shortDescription()
 
-    def test_dynamic_array_stack_peek(self):
+    def test_stack_with_dynamic_array_peek(self):
         r"""Should peek the top element of a dynamic array stack."""
-        stack = DynamicArrayStack()
+        stack = StackWithDynamicArray()
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -50,10 +50,10 @@ class TestDynamicArrayStack(unittest.TestCase):
         self.shortDescription()
 
 
-class TestLinkedListStack(unittest.TestCase):
-    def test_linked_list_stack_init(self):
-        r"""Should create a linked list stack containing three elements."""
-        stack = LinkedListStack()
+class TestStackWithLinkedList(unittest.TestCase):
+    def test_stack_with_linked_list_init(self):
+        r"""Should create a stack with linked list containing three elements."""
+        stack = StackWithLinkedList()
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -61,9 +61,9 @@ class TestLinkedListStack(unittest.TestCase):
         self.assertEqual(stack.size, 3)
         self.shortDescription()
 
-    def test_linked_list_stack_push_and_pop(self):
+    def test_stack_with_linked_list_push_and_pop(self):
         r"""Should push and pop elements of a stack following LIFO principle."""
-        stack = LinkedListStack()
+        stack = StackWithLinkedList()
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -81,9 +81,9 @@ class TestLinkedListStack(unittest.TestCase):
 
         self.shortDescription()
 
-    def test_linked_list_stack_peek(self):
+    def test_stack_with_linked_list_peek(self):
         r"""Should peek the top element of a linked list stack."""
-        stack = LinkedListStack()
+        stack = StackWithLinkedList()
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -95,10 +95,10 @@ class TestLinkedListStack(unittest.TestCase):
         self.shortDescription()
 
 
-class TestFixedSizeArrayStack(unittest.TestCase):
-    def test_fixed_size_array_stack_init(self):
-        r"""Should create a fixed-size array stack containing three elements."""
-        stack = FixedSizeArrayStack(10)
+class TestStackWithFixedSizeArray(unittest.TestCase):
+    def test_stack_with_fixed_size_array_init(self):
+        r"""Should create a stack with fixed-size array containing three elements."""
+        stack = StackWithFixedSizeArray(10)
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -108,9 +108,9 @@ class TestFixedSizeArrayStack(unittest.TestCase):
 
         self.shortDescription()
 
-    def test_fixed_size_array_stack_push_and_pop(self):
+    def test_stack_with_fixed_size_array_push_and_pop(self):
         r"""Should push and pop elements of a stack following LIFO principle."""
-        stack = FixedSizeArrayStack(10)
+        stack = StackWithFixedSizeArray(10)
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -126,9 +126,9 @@ class TestFixedSizeArrayStack(unittest.TestCase):
 
         self.shortDescription()
 
-    def test_fixed_size_array_stack_full(self):
+    def test_stack_with_fixed_size_array_full(self):
         r"""Should prevent adding more elements when stack is full."""
-        stack = FixedSizeArrayStack(max_size=3)
+        stack = StackWithFixedSizeArray(max_size=3)
         stack.push(3)
         stack.push(2)
         stack.push(1)
@@ -140,9 +140,9 @@ class TestFixedSizeArrayStack(unittest.TestCase):
 
         self.shortDescription()
 
-    def test_fixed_size_array_stack_empty(self):
+    def test_stack_with_fixed_size_array_empty(self):
         r"""Should prevent popping from an empty stack."""
-        stack = FixedSizeArrayStack(max_size=3)
+        stack = StackWithFixedSizeArray(max_size=3)
 
         self.assertTrue(stack.is_empty())
 

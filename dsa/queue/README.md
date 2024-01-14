@@ -2,7 +2,7 @@
 
 A queue is an abstract data structure (ADT) that follows First In, First Out (FIFO) principle.
 
-![Simple Queue](simple_queue.png)
+![Simple Queue](./assets/simple_queue.png)
 
 ## Basic Operations
 

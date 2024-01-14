@@ -1,4 +1,4 @@
-class DynamicArrayQueue:
+class QueueWithDynamicArray:
     def __init__(self):
         self.queue = []
 
@@ -15,7 +15,7 @@ class DynamicArrayQueue:
         self.queue.append(data)
 
     def dequeue(self):
-        r"""Removes an element from the front of the queue."""
+        r"""Removes and returns an element from the front of the queue."""
         if self.is_empty():
             raise IndexError("Dequeue from an empty queue")
 

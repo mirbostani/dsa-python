@@ -1,4 +1,4 @@
-class DynamicArrayStack:   
+class StackWithDynamicArray:   
     def __init__(self):
         self.stack = [] # Python list (dynamic array)
 

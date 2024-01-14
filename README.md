@@ -12,8 +12,10 @@ Data Structures and Algorithms in Python
     - [x] [Reverse String](./dsa/stack/examples/reverse_string.py)
     - [x] [Match Parentheses](./dsa/stack/examples/match_parentheses.py)
 - [Queue](./dsa/queue/)
-  - [x] [Dynamic Array Queue](./dsa/queue/dynamic_array_queue.py) (Simple Queue)
-  - [x] [Two-Stack Queue](./dsa/queue/two_stack_queue.py) (Simple Queue)
+  - Simple Queue
+    - [x] [Queue with Dynamic Array](./dsa/queue/queue_with_dynamic_array.py.py)
+    - [x] [Queue with Fixed-Size Array](./dsa/queue/queue_with_fixed_size_array.py)
+    - [x] [Queue with Two Stacks](./dsa/queue/queue_with_two_stacks.py.py)
   - Circular Queue
   - Priority Queue
   - Double Ended Queue
@@ -21,5 +23,5 @@ Data Structures and Algorithms in Python
 ## Test
 
 ```bash
-$ python -m unittest ./dsa/stack/*_test.py -v
+$ python -m unittest ./dsa/stack/test/*_test.py -v
 ```
