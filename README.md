@@ -5,9 +5,9 @@ Data Structures and Algorithms in Python
 ## Table of Contents
 
 - [Stack](./dsa/stack/)
-  - [x] [Dynamic Array Stack](./dsa/stack/dynamic_array_stack.py)
-  - [x] [Linked List Stack](./dsa/stack/linked_list_stack.py)
-  - [x] [Fixed-Size Array Stack](./dsa/stack/fixed_size_array_stack.py)
+  - [x] [Stack with Dynamic Array](./dsa/stack/stack_with_dynamic_array.py)
+  - [x] [Stack with Linked List](./dsa/stack/stack_with_linked_list.py)
+  - [x] [Stack with Fixed-Size Array](./dsa/stack/stack_with_fixed_size_array.py)
   - Examples
     - [x] [Reverse String](./dsa/stack/examples/reverse_string.py)
     - [x] [Match Parentheses](./dsa/stack/examples/match_parentheses.py)
