@@ -2,6 +2,8 @@
 
 A stack is a linear data structure that follows the principle of Last In, First Out (LIFO), that is, the last element pushed onto the stack is removed first.
 
+![Stack](./assets/stack.png)
+
 ## Basic Operations
 
 The basic operations of stack are:

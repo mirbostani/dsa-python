@@ -15,7 +15,7 @@ Data Structures and Algorithms in Python
   - Simple Queue
     - [x] [Queue with Dynamic Array](./dsa/queue/queue_with_dynamic_array.py.py)
     - [x] [Queue with Fixed-Size Array](./dsa/queue/queue_with_fixed_size_array.py)
-    - [x] [Queue with Two Stacks](./dsa/queue/queue_with_two_stacks.py.py)
+    - [x] [Queue with Two Stacks](./dsa/queue/queue_with_two_stacks.py)
   - Circular Queue
   - Priority Queue
   - Double Ended Queue
