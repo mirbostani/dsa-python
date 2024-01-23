@@ -1,7 +1,7 @@
 import unittest
-from dsa.stack.stack_with_dynamic_array import StackWithDynamicArray
-from dsa.stack.stack_with_linked_list import StackWithLinkedList
-from dsa.stack.stack_with_fixed_size_array import StackWithFixedSizeArray
+from src.stack.stack_with_dynamic_array import StackWithDynamicArray
+from src.stack.stack_with_linked_list import StackWithLinkedList
+from src.stack.stack_with_fixed_size_array import StackWithFixedSizeArray
 
 
 class TestStackWithDynamicArray(unittest.TestCase):

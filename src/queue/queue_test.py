@@ -1,7 +1,7 @@
 import unittest
-from dsa.queue.queue_with_dynamic_array import QueueWithDynamicArray
-from dsa.queue.queue_with_two_stacks import QueueWithTwoStacks
-from dsa.queue.queue_with_fixed_size_array import QueueWithFixedSizeArray
+from src.queue.queue_with_dynamic_array import QueueWithDynamicArray
+from src.queue.queue_with_two_stacks import QueueWithTwoStacks
+from src.queue.queue_with_fixed_size_array import QueueWithFixedSizeArray
 
 class TestQueueWithDynamicArray(unittest.TestCase):
     def test_queue_with_dynamic_array_init(self):
