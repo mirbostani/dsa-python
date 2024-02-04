@@ -1,10 +1,10 @@
 class StackWithDynamicArray:   
     def __init__(self):
-        self.stack = [] # Python list (dynamic array)
+        self.items = [] # Python list (dynamic array)
 
     @property
     def size(self):
-        return len(self.stack)
+        return len(self.items)
 
     def is_empty(self):
         r"""
@@ -17,9 +17,9 @@ class StackWithDynamicArray:
         The space complexity is $O(1)$, as the method does not use additional
         space that scales with the size of the input.
         """
-        return len(self.stack) == 0
+        return len(self.items) == 0
 
-    def push(self, data):
+    def push(self, item):
         r"""
         Pushes an element to the top of the stack.
 
@@ -34,7 +34,7 @@ class StackWithDynamicArray:
         The space complexity is $O(1)$, as the method appends a single element
         to the list, and the space required for this operation is constant.
         """
-        self.stack.append(data)
+        self.items.append(item)
 
     def pop(self):
         r"""
@@ -50,7 +50,7 @@ class StackWithDynamicArray:
         if self.is_empty():
             return IndexError("Pop from an empty stack")
 
-        return self.stack.pop()  # Raises `IndexError` if list is empty
+        return self.items.pop()  # Raises `IndexError` if list is empty
 
     def top(self):
         r"""
@@ -65,7 +65,7 @@ class StackWithDynamicArray:
         if self.is_empty():
             return IndexError("Peek from an empty stack")
 
-        return self.stack[-1]  # Returns the value of the last element
+        return self.items[-1]  # Returns the value of the last element
 
     def peek(self):
         r"""
@@ -77,6 +77,6 @@ class StackWithDynamicArray:
         if self.is_empty():
             print("Stack is empty")
         else:
-            for element in self.stack[::-1]:
+            for element in self.items[::-1]:
                 print(element, end=" -> ")
             print("None")

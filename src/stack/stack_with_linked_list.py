@@ -32,14 +32,14 @@ class StackWithLinkedList:
     def is_empty(self):
         return self.head is None
 
-    def push(self, data):
+    def push(self, item):
         r"""
         Adds an element to the top of the stack.
 
         Time Complexity: $O(1)$
         Space Complexity: $O(1)$
         """
-        new_node = Node(data)
+        new_node = Node(item)
         new_node.next = self.head  # Points the new node's next to the head.
         self.head = new_node  # Sets the new node as the head.
 
